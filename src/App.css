@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.form-title{
+text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-wrapper{
+  max-width: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input,select{
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-field-wrapper{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 10px;
+}
+.input-error{
+  border: 1px solid red;
+}
+
+.error{
+  color: red;
+}
+
+.radio-options{
+  display: flex;
+  gap: 10px;
+ 
+}
+
+button{
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: aqua;
+  opacity: 0.8;
+}
+
+button:hover{
+  font-weight: bold;
+  opacity: 1;
+}
+
+main{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-wrapper{
+  padding: 20px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+border-radius: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.look-values-container{
+  padding: 10px;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.look-values-container .look-title{
+  font-weight: bold;
 }
