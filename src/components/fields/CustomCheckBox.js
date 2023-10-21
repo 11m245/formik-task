@@ -13,7 +13,7 @@ function CustomCheckBox({ label, ...props }) {
           className={meta.error && meta.touched ? "input-error" : ""}
           type="checkbox"
         />
-        {label}
+        <label htmlFor={props.id}>&nbsp;{label}</label>
       </div>
       {meta.error && meta.touched ? <p className="error">{meta.error}</p> : ""}
       {/* <ErrorMessage name={props.name} component="div" /> */}
